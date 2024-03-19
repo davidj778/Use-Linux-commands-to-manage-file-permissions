@@ -12,5 +12,59 @@ Your task is to examine existing permissions on the file system. You’ll need t
 
 
 
+File permissions in Linux
+Project description
+[Describe what you accomplish through Linux commands.]
 
+Check file and directory details
+
+To find the current file permissions, use the Linux command, type: 
+
+```
+ls -l
+```
+The /home/researcher2/projects directory would look like the following:
+
+```
+project_k.txt
+   User = read, write,
+   Group = read, write
+   Other = read, write
+project_m.txt
+   User = read, write
+   Group = read
+   Other = none
+project_r.txt
+   User= read, write
+   Group = read, write
+   Other = read
+project_t.txt
+   User = read, write
+   Group = read, write
+   Other = read
+.project_x.txt
+   User = read, write
+   Group = write
+   Other = none
+```
+
+Describe the permissions string
+
+The permissions string for project_m.txt would be:
+
+```
+-rw-r——-
+```
+
+The “r” stands for read, the “w”, stands for write and the “-“ stands for none”. The “-“ for the first character does not mean “none”, it means that it’s a regular file.
+
+
+Change file permissions
+[Add content here.]
+Change file permissions on a hidden file
+[Add content here.]
+Change directory permissions
+[Add content here.]
+Summary
+[Add content here.]
 
