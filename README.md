@@ -12,13 +12,14 @@ Your task is to examine existing permissions on the file system. You’ll need t
 
 
 
-File permissions in Linux
-Project description
+# File permissions in Linux
+
+## Project description
 [Describe what you accomplish through Linux commands.]
 
-Check file and directory details
+## Check file and directory details
 
-To find the current file permissions, use the Linux command, type: 
+To find the current file permissions, use the Linux command: 
 
 ```
 ls -l
@@ -48,7 +49,7 @@ project_t.txt
    Other = none
 ```
 
-Describe the permissions string
+## Describe the permissions string
 
 The permissions string for project_m.txt would be:
 
@@ -56,15 +57,15 @@ The permissions string for project_m.txt would be:
 -rw-r——-
 ```
 
-The “r” stands for read, the “w”, stands for write and the “-“ stands for none”. The “-“ for the first character does not mean “none”, it means that it’s a regular file.
+The “r” stands for read, the “w” stands for write and the “-“ stands for none. The “-“ for the first character does not mean “none”, it means that it’s a regular file.
 
 
-Change file permissions
+## Change file permissions
 [Add content here.]
-Change file permissions on a hidden file
+## Change file permissions on a hidden file
 [Add content here.]
-Change directory permissions
+## Change directory permissions
 [Add content here.]
-Summary
+## Summary
 [Add content here.]
 
