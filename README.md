@@ -75,26 +75,43 @@ The above command will change the permissions of other to write only. “chmod�
 
 The organization does not want the archived .project_x.txt have write permissions for anyone, but they want the user and group to be able to read the file. 
 
-	.project_x.txt
-* 		User = read, write
-* 		Group = write
-* 		Other = none
+    .project_x.txt
+        User = read, write
+        Group = write
+        Other = none
 
 In order to update this file with the proper permissions, you would use the following:
 
+```
 chmod u-w, g-w, g+r .project_x.t
+```
 
-u-w takes away the write permission from users.
+- u-w takes away the write permission from users.
 
-g-w takes away the write permission from group.
+- g-w takes away the write permission from group.
 
-g+r adds the read permission to group
+- g+r adds the read permission to group
 
 
-
-[Add content here.]
 ## Change directory permissions
-[Add content here.]
+
+The organization only wants researcher2 to have access to the drafts directory and its contents.
+
+Here are the permissions for the subdirectory file drafts:
+
+```
+User = read, write, execute
+Group = execute
+Other = none
+```
+
+To accomplish this task, you use the following command to remove the execute permission for everyone except the user of the file.
+
+```
+chmod g-x drafts
+```
+
 ## Summary
-[Add content here.]
+
+After reviewing all the permissions, it was found that multiple files needed their permissions changed. By using the “chmod” command followed by certain instructions(u-w, g+r, as some examples), permissions were either added or taken away.
 
