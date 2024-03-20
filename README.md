@@ -15,7 +15,8 @@ Your task is to examine existing permissions on the file system. You’ll need t
 # File permissions in Linux
 
 ## Project description
-[Describe what you accomplish through Linux commands.]
+
+An organization wants to configure the permissions for a few files. They need the security analyst to check the permissions and update them if needed.
 
 ## Check file and directory details
 
@@ -61,8 +62,36 @@ The “r” stands for read, the “w” stands for write and the “-“ stands
 
 
 ## Change file permissions
-[Add content here.]
+
+The organization does not allow other to have write access to any files.
+
+```
+chmod o-w project_k.txt
+```
+
+The above command will change the permissions of other to write only. “chmod” stands for change mode, which is the command that changes the permissions for the file. The o in o-w stands for “other” and the w stands for write. After the change is made, you can use “ls -la” to see the new update.
+
 ## Change file permissions on a hidden file
+
+The organization does not want the archived .project_x.txt have write permissions for anyone, but they want the user and group to be able to read the file. 
+
+	.project_x.txt
+* 		User = read, write
+* 		Group = write
+* 		Other = none
+
+In order to update this file with the proper permissions, you would use the following:
+
+chmod u-w, g-w, g+r .project_x.t
+
+u-w takes away the write permission from users.
+
+g-w takes away the write permission from group.
+
+g+r adds the read permission to group
+
+
+
 [Add content here.]
 ## Change directory permissions
 [Add content here.]
