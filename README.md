@@ -37,7 +37,7 @@ project_m.txt
    Group = read
    Other = none
 project_r.txt
-   User= read, write
+   User = read, write
    Group = read, write
    Other = read
 project_t.txt
