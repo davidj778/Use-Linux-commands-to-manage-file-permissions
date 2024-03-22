@@ -73,7 +73,7 @@ The above command will change the permissions of other to write only. â€œchmodâ€
 
 ## Change file permissions on a hidden file
 
-The organization does not want the archived .project_x.txt have write permissions for anyone, but they want the user and group to be able to read the file. 
+The organization does not want the archived .project_x.txt to have write permissions for anyone. Instead, they want the user and group to be able to read the file. 
 
     .project_x.txt
         User = read, write
@@ -83,7 +83,7 @@ The organization does not want the archived .project_x.txt have write permission
 In order to update this file with the proper permissions, you would use the following:
 
 ```
-chmod u-w, g-w, g+r .project_x.t
+chmod u-w, g-w, g+r .project_x.txt
 ```
 
 - u-w takes away the write permission from users.
